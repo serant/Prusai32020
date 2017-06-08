@@ -410,7 +410,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
   // X and Y offsets must be integers
   #define X_PROBE_OFFSET_FROM_EXTRUDER 28
   #define Y_PROBE_OFFSET_FROM_EXTRUDER -3
-  #define Z_PROBE_OFFSET_FROM_EXTRUDER -15.8
+  #define Z_PROBE_OFFSET_FROM_EXTRUDER -19.8
   
 
   #define Z_RAISE_BEFORE_HOMING 25       // (in mm) Raise Z before homing (G28) for Probe Clearance.
@@ -491,7 +491,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80, 80, 3840, 90}  // default steps per unit for Ultimaker
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80, 80, 400, 90}  // default steps per unit for Ultimaker
 #define DEFAULT_MAX_FEEDRATE          {250, 250, 2, 22}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {1000,1000,5,1000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
@@ -517,7 +517,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 #define CUSTOM_M_CODES
 #ifdef CUSTOM_M_CODES
   #define CUSTOM_M_CODE_SET_Z_PROBE_OFFSET 851
-  #define Z_PROBE_OFFSET_RANGE_MIN -15
+  #define Z_PROBE_OFFSET_RANGE_MIN -20
   #define Z_PROBE_OFFSET_RANGE_MAX -5
 #endif
 
